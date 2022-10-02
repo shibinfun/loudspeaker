@@ -1,0 +1,7 @@
+<h3> 投文件 </h3>
+
+<%= simple_form_for [:admin,@download] do |f| %>
+  <%= f.input :title %>
+  <%= f.input :attachment %>
+  <%= f.submit "送出" %>
+<% end %>

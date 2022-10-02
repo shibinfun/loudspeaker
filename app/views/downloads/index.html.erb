@@ -1,0 +1,10 @@
+<%@downloads.each do |d|%>
+<p><%= d.title %></p>
+<% if d.attachment.present? %>
+         <i class="fa fa-paperclip"> </i>
+         <%= link_to("下载文件", d.attachment_url) %>
+       <% else %>
+          没有文件可供下载
+       <% end %>
+
+       <% end %>
