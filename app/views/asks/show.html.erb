@@ -1,0 +1,7 @@
+<div class="text-center">
+</div>
+<%= @ask.asking%>
+<p>回答：</p>
+<% @answers.each do |answer|%>
+<%= answer.content %>
+<% end %>

@@ -1,0 +1,8 @@
+<h3> 投交回答到 <%= @ask.asking %> </h3>
+
+<hr>
+
+<%= simple_form_for [@ask, @answer] do |f| %>
+  <%= f.input :content %>
+  <%= f.submit "送出" %>
+<% end %>

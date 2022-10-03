@@ -1,7 +1,11 @@
 class AsksController < ApplicationController
   def new
     @ask = Ask.new
+  end
 
+  def show
+    @ask = Ask.find(params[:id])
+    @answers = @ask.answers
   end
   def create
      @ask = Ask.new(ask_params)
@@ -14,6 +18,7 @@ class AsksController < ApplicationController
    end
 def index
   @asks = Ask.all
+
 end
    private
 
