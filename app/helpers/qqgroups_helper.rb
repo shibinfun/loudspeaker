@@ -1,0 +1,2 @@
+module QqgroupsHelper
+end

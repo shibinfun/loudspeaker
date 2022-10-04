@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+resources:qqgroups
+
+
+
+  namespace :admin do
+    resources:qqgroups
+  end
 
   devise_for :users
   resources :informationns

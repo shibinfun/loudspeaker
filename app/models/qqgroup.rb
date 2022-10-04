@@ -1,0 +1,2 @@
+class Qqgroup < ApplicationRecord
+end
