@@ -1,25 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+蓝天计划，第一天进度：做出销售者全部的功能
 
-Things you may want to cover:
+身为销售者，我要发表文章，文章一共有4类，第一类专业文章、第二类朋友链接、第三类下载推荐、第四类个人学习,第五类个人计划、提供给客户观看的价值。
 
-* Ruby version
+销售者--admin权限--进入后台---发表、修改、删除、隐藏、
 
-* System dependencies
+观看--可以在前台，不需要权限。
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 # loudspeaker
