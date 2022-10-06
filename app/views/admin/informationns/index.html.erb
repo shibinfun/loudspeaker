@@ -2,3 +2,23 @@
 <%= link_to("写一篇",new_admin_informationn_path,:class => "btn btn-default")%>
 
 </div>
+<table class = "table table-bordered">
+<% @informationns.each do |informationn| %>
+<tr>
+<td>
+<%= link_to(informationn.title,admin_informationn_path(informationn))%>
+</td>
+<td>
+<%= link_to("更改",edit_admin_informationn_path(informationn))%>
+<%= link_to("删除",admin_informationn_path(informationn),:method => :delete, :data => {:confirm => "你确定？"})%>
+
+</td>
+<td>
+<%= informationn.created_at %>
+</td>
+
+
+  </tr>
+<% end %>
+
+  </table>

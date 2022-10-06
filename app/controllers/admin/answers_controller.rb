@@ -1,10 +1,12 @@
 class Admin::AnswersController < ApplicationController
   before_action :authenticate_user!, only:[:new,:create,:update,:edit,:destroy]
   before_action :require_is_admin
+  layout "admin"
 def show
   @answer = Answer.find(params[:id])
 end
 def index
+  @asks = Ask.all
   @answers = Answer.all
 end
 
@@ -19,7 +21,7 @@ def create
 @answer.user = current_user
 if @answer.save
   flash[:notice] = "已经成功提交回答"
-  redirect_to ask_path(@ask)
+  redirect_to admin_answers_path(@ask)
 else
   render :new
 end

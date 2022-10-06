@@ -1,5 +1,27 @@
-freeze
-<%@downloads.each do |d|%>
-<p><%= d.title %></p>
 
-<%end%>
+<div>
+<%= link_to("上传一个",new_admin_download_path,:class => "btn btn-default")%>
+
+</div>
+
+
+<table class = "table table-bordered">
+<% @downloads.each do |download| %>
+<tr>
+<td>
+<%= link_to(download.title,admin_download_path(download))%>
+</td>
+<td>
+<%= link_to("更改",edit_admin_download_path(download))%>
+<%= link_to("删除",admin_download_path(download),:method => :delete, :data => {:confirm => "你确定？"})%>
+
+</td>
+<td>
+<%= download.created_at %>
+</td>
+
+
+  </tr>
+<% end %>
+
+  </table>

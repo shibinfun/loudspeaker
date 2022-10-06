@@ -24,6 +24,7 @@ namespace :admin do
 end
 
 namespace :admin do
+  resources :answers
   resources :downloads
 end
 namespace :admin do

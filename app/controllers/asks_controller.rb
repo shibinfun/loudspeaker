@@ -1,6 +1,7 @@
 class AsksController < ApplicationController
   def new
     @ask = Ask.new
+
   end
 
   def show
@@ -9,6 +10,7 @@ class AsksController < ApplicationController
   end
   def create
      @ask = Ask.new(ask_params)
+     @ask.user = current_user
 
      if @ask.save
        redirect_to asks_path
