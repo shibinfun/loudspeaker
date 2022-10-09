@@ -1,4 +1,28 @@
 Rails.application.routes.draw do
+  namespace :admin do
+  resources :recommends
+  end
+  resources :recommends
+  namespace :admin do
+    get 'recommends/create'
+  end
+
+  namespace :admin do
+    get 'recommends/destroy'
+  end
+
+  namespace :admin do
+    get 'recommends/edit'
+  end
+
+  namespace :admin do
+    get 'recommends/update'
+  end
+
+  get 'recommends/index'
+
+  get 'recommends/show'
+
 resources:qqgroups
 
 
