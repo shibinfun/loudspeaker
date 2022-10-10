@@ -1,2 +1,9 @@
-<h1>Admin::Qqgroups#edit</h1>
-<p>Find me in app/views/admin/qqgroups/edit.html.erb</p>
+<h1>更改</h1>
+
+<%= simple_form_for [:admin,@qqgroup] do |f|%>
+
+<%= f.input :content%>
+<%= f.submit "Submit"%>
+
+
+<% end %>

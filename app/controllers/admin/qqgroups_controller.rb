@@ -5,11 +5,21 @@ class Admin::QqgroupsController < ApplicationController
   def new
     @qqgroup =Qqgroup.new
   end
-
+  def index
+    @qqgroups = Qqgroup.all
+  end
+def destroy
+  @qqgroup = Qqgroup.find(params[:id])
+   if @qqgroup.destroy
+     redirect_to admin_qqgroups_path
+   else
+   render :index
+ end
+end
   def create
     @qqgroup =Qqgroup.new(qqgroup_params)
     if @qqgroup.save
-      redirect_to qqgroups_path
+      redirect_to admin_qqgroups_path
     else
       render :new
     end
@@ -21,7 +31,12 @@ class Admin::QqgroupsController < ApplicationController
 
   def update
       @qqgroup=Qqgroup.find(params[:id])
-      @qqgroup.update(qqgroup_params)
+    if  @qqgroup.update(qqgroup_params)
+      redirect_to admin_qqgroups_path
+    else
+render :new
+end
+
   end
 
   private

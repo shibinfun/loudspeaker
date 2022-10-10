@@ -1,0 +1,24 @@
+<div>
+<%= link_to("写一篇",new_admin_qqgroup_path,:class => "btn btn-default")%>
+
+</div>
+<table class = "table table-bordered">
+<% @qqgroups.each do |qqgroup| %>
+<tr>
+<td>
+<%= link_to(qqgroup.content,admin_qqgroup_path(qqgroup))%>
+</td>
+<td>
+<%= link_to("更改",edit_admin_qqgroup_path(qqgroup))%>
+<%= link_to("删除",admin_qqgroup_path(qqgroup),:method => :delete, :data => {:confirm => "你确定？"})%>
+
+</td>
+<td>
+<%= qqgroup.created_at %>
+</td>
+
+
+  </tr>
+<% end %>
+
+  </table>
