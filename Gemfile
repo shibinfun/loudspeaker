@@ -1,5 +1,5 @@
-source 'https://gems.ruby-china.com'
-
+# source 'https://gems.ruby-china.com'
+source 'https://rubygems.org'
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
@@ -32,6 +32,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'minitest', '~> 5.8.4'
 gem 'racc', '~> 1.5.1'
+gem 'mimemagic', github: 'mimemagicrb/mimemagic', ref: '01f92d86d15d85cfd0f20dabd025dcbd36a8a60f'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
  gem 'mysql2'
