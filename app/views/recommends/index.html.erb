@@ -1,4 +1,19 @@
-<h1>推荐</h1>
-<% @recommends.each do |recommend|%>
+
+<table class = "table table-bordered">
+<% @recommends.each do |recommend| %>
+<tr>
+<td>
 <a href="<%=recommend.linkk%>"><%= recommend.title%></a>
+</td>
+<td>
+美文
+</td>
+<td>
+<%= recommend.created_at %>
+</td>
+
+
+  </tr>
 <% end %>
+
+  </table>
