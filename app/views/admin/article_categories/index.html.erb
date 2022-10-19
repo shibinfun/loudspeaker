@@ -1,0 +1,28 @@
+<div>
+<%= link_to("添加一类",new_admin_article_category_path,:class => "btn btn-default")%>
+
+</div>
+<div>
+<%= link_to("返回文章列表",admin_articles_path,:class => "btn btn-default")%>
+
+</div>
+<table class = "table table-bordered">
+<% @article_categories.each do |article_category| %>
+<tr>
+<td>
+<%= link_to(article_category.name)%>
+</td>
+<td>
+<%= link_to("更改",edit_admin_article_category_path(article_category))%>
+<%= link_to("删除",admin_article_category_path(article_category),:method => :delete, :data => {:confirm => "你确定？"})%>
+
+</td>
+<td>
+<%= article_category.created_at %>
+</td>
+
+
+  </tr>
+<% end %>
+
+  </table>

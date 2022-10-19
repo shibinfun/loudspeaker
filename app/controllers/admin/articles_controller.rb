@@ -8,10 +8,12 @@ class Admin::ArticlesController < ApplicationController
   end
   def index
     @articles = Article.all
+
   end
 
   def new
     @article = Article.new
+    @article_categories = ArticleCategory.all.map{|c| [ c.name, c.id ] }
   end
 
   def create
@@ -46,7 +48,7 @@ class Admin::ArticlesController < ApplicationController
 
   private
   def article_params
-    params.require(:article).permit(:title, :content)
+    params.require(:article).permit(:title, :content,:article_category_id)
   end
 
   end

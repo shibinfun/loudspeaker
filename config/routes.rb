@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   end
   resources :recommends
   namespace :admin do
-    get 'recommends/create'
+    resources :article_categories
   end
 
   namespace :admin do

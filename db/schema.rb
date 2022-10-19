@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_10_07_093957) do
+ActiveRecord::Schema.define(version: 2022_10_13_110001) do
 
   create_table "answers", force: :cascade do |t|
     t.integer "ask_id"
@@ -20,11 +20,19 @@ ActiveRecord::Schema.define(version: 2022_10_07_093957) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "article_categories", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "articles", force: :cascade do |t|
     t.string "title"
     t.text "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "article_category_id"
+    t.index ["article_category_id"], name: "index_articles_on_article_category_id"
   end
 
   create_table "asks", force: :cascade do |t|
@@ -41,7 +49,21 @@ ActiveRecord::Schema.define(version: 2022_10_07_093957) do
     t.string "attachment"
   end
 
+  create_table "information", force: :cascade do |t|
+    t.string "title"
+    t.text "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "informationns", force: :cascade do |t|
+    t.string "title"
+    t.text "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "migrations", force: :cascade do |t|
     t.string "title"
     t.text "content"
     t.datetime "created_at", null: false
@@ -58,6 +80,7 @@ ActiveRecord::Schema.define(version: 2022_10_07_093957) do
     t.string "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "link"
     t.string "linkk"
   end
 

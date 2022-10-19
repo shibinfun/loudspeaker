@@ -11,6 +11,7 @@
 <%= simple_form_for [:admin,@article] do |f|%>
 <%= f.input :title%>
 <%= f.input :content%>
+<%= f.association :article_category %>
 <%= f.submit "Submit"%>
 
 
