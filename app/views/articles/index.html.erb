@@ -8,7 +8,16 @@
 
 
  </div>
+ <table class = "table table-bordered">
 
  <% @articles.each do |article|%>
- <%= article.content %>
+  <tr>
+    <td>
+ <%= link_to(article.content,article_path(article))%>
+  </td>
+  <td>
+<%=   %>
+</td>
+  </tr>
  <% end %>
+    </table>
