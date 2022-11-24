@@ -6,7 +6,8 @@ class User < ApplicationRecord
 has_many :answers
 has_many :asks
          def admin?
-          is_admin
+           email == 'iloveshibin@gmail.com'
+
 
          end
 end
