@@ -1,4 +1,7 @@
+
+
 <div class="category_sidebar tc border f12">
+  <a>类别：</a>
 <% @a.each do |category| %>
 <%= link_to category.name, articles_path(category: category.id) %>
 
