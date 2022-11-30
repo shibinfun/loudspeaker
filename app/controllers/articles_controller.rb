@@ -10,9 +10,7 @@ end
 if params[:article_category].blank?
   @articles = Article.all
 else
-
-  @article_category_id = Article_category.find_by(id: params[:article_category]).id
-  @articles = Article.where(:article_category_id => @article_category_id)
+  @articles = Article.where(:category)
 end
  end
 
