@@ -7,10 +7,11 @@ end
 
   def index
 @a = ArticleCategory.all
-if params[:article_category].blank?
+if params[:category].blank?
   @articles = Article.all
 else
-  @articles = Article.where(:category)
+#@ac = ArticleCategory.find_by(params[:category])
+  @articles = Article.where(article_category_id: params[:category])
 end
  end
 

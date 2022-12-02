@@ -6,7 +6,9 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :article_categories
   end
-
+  namespace :admin do
+    resources :recommend_categories
+  end
   namespace :admin do
     get 'recommends/destroy'
   end

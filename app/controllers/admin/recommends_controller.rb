@@ -31,7 +31,7 @@ class Admin::RecommendsController < ApplicationController
 
   private
   def recommend_params
-    params.require(:recommend).permit(:title,:linkk)
+    params.require(:recommend).permit(:title,:linkk,:recommend_category_id)
 
   end
 end

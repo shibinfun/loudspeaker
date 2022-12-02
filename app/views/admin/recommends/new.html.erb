@@ -2,5 +2,6 @@
 <%= simple_form_for [:admin,@recommend] do |f|%>
 <%= f.input :title%>
 <%= f.input :linkk %>
+<%= f.association :recommend_category %>
 <%= f.submit "Submit"%>
 <% end %>
