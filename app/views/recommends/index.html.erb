@@ -1,4 +1,17 @@
 
+<div class="category_sidebar tc border f12">
+  <a style = "color:green">类别：</a>
+<% @a.each do |recommend| %>
+<%= link_to recommend.name, recommends_path(recommend: recommend.id) %>
+
+   <% end %>
+   <a class="backtop" href="javascript:;"><i class="fa fa-arrow-circle-up"></i></a>
+
+
+
+ </div>
+
+
 <table class = "table table-bordered">
 <% @recommends.each do |recommend| %>
 <tr>
