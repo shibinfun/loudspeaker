@@ -46,7 +46,7 @@ end
 
 private
 def informationn_params
-  params.require(:informationn).permit(:title, :content)
+  params.require(:informationn).permit(:title, :content,:informationn_category)
 end
 
 

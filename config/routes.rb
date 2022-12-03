@@ -10,6 +10,9 @@ Rails.application.routes.draw do
     resources :recommend_categories
   end
   namespace :admin do
+    resources :informationn_categories
+  end
+  namespace :admin do
     get 'recommends/destroy'
   end
 

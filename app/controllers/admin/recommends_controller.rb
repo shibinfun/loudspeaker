@@ -24,9 +24,17 @@ class Admin::RecommendsController < ApplicationController
   end
 
   def edit
+    @recommend = Recommend.find(params[:id])
+
   end
 
   def update
+    @recommend = Recommend.find(params[:id])
+    if @recommend.update(recommend_params)
+      redirect_to admin_articles_path
+    else
+      render :new
+    end
   end
 
   private
