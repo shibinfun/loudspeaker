@@ -12,6 +12,7 @@ if params[:category].blank?
 else
 #@ac = ArticleCategory.find_by(params[:category])
 @informationns = Informationn.where(informationn_category_id: params[:category])
+
 end
 end
 end
