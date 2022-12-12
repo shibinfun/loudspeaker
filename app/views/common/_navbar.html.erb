@@ -4,18 +4,25 @@
     <div class="container-fluid ">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header ">
-            <a class="navbar-brand" href=" /">首页 </a>
-  <a class="navbar-brand" href=" /articles">专业文章 </a>
 
-  <a class="navbar-brand" href=" /asks">专业问答 </a>
+          <ul class = "nav nav-tabs">
+          <li>  <a class="navbar-brand" href=" /">首页 </a></li>
+  <li><a class="navbar-brand" href=" /articles">专业文章 </a></li>
 
-<a class="navbar-brand" style="color:green" href=" /recommends">有用网址</a>
-<a class="navbar-brand" href=" /qqgroups">群</a>
 
-<a class="navbar-brand" href=" /informationns">其他 </a>
+  <li><a class=" dropdown navbar-brand" data-toggle = "dropdown"href=" /asks">🌹专业问答 </a>
+<ul class="dropdown-menu">
+<li> <%= link_to("我要提问", new_ask_path) %> </li>
+<li> <%= link_to("全部问答", asks_path) %> </li>
+  </ul>
+</li>
+<li><a class="navbar-brand" style="" href=" /recommends">有用网址</a></li>
+<li><a class="navbar-brand" href=" /qqgroups">群</a></li>
 
-<a class="navbar-brand" href=" /downloads">下载</a>
+<li><a class="navbar-brand" href=" /informationns">其他 </a></li>
 
+<li><a class="navbar-brand" href=" /downloads">视频</a></li>
+</ul>
         </div>
 
 
@@ -25,7 +32,7 @@
                 <li>
 
                 <% if !current_user %>
-                  <li><%= link_to("注册", new_user_registration_path) %> </li>
+                   <li><%= link_to("注册", new_user_registration_path) %> </li>
                   <li><%= link_to("登入", new_user_session_path) %></li>
                 <% else %>
                   <li class="dropdown">
