@@ -2,15 +2,15 @@
     <div class="container-fluid ">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header ">
-            <a class="navbar-brand" href=" /">🔙去首页 </a>
+            <a class="navbar-brand" href=" /">去首页 </a>
   <a class="navbar-brand" href=" /admin/articles">专业文章 </a>
   <a class="navbar-brand" href=" /admin/answers">回答 </a>
   <a class="navbar-brand" href=" /admin/recommends">有用网址</a>
 
 <a class="navbar-brand" href=" /admin/qqgroups">群</a>
-<a class="navbar-brand" href=" /admin/informationns">其他 </a>
+<a class="navbar-brand" href=" /admin/informationns">名词解释 </a>
 
-<a class="navbar-brand" href=" /admin/downloads">下载</a>
+<a class="navbar-brand" href=" /admin/downloads">观看</a>
 
         </div>
 
@@ -32,7 +32,7 @@
                     <ul class="dropdown-menu">
                       <% if current_user.admin? %>
                       <li> <%= link_to("管理员", admin_articles_path) %> </li>
-<% end %>                 
+<% end %>
 
                         <li> <%= link_to("登出", destroy_user_session_path, method: :delete) %> </li>
                     </ul>

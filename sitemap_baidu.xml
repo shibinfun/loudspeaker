@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:mobile="http://www.baidu.com/schemas/sitemap-mobile/1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <!-- Created By http://www.zhetao.com/sitemapcreator,  URLs: 37 Generated at: 2022-12-19 15:38:56 -->
+
+  <url>
+    <loc>http://www.shibin.work/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>http://www.shibin.work/articles</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>http://www.shibin.work/asks</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>http://www.shibin.work/asks/new</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>http://www.shibin.work/recommends</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>http://www.shibin.work/informationns</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>http://www.shibin.work/downloads</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>http://www.shibin.work/users/sign_up</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>http://www.shibin.work/users/sign_in</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>http://www.shibin.work/articles?category=7</loc>
+    <priority>0.79</priority>
+  </url>
+
+  <url>
+    <loc>http://www.shibin.work/articles?category=2</loc>
+    <priority>0.77</priority>
+  </url>
+
+  <url>
+    <loc>http://www.shibin.work/articles?category=3</loc>
+    <priority>0.76</priority>
+  </url>
+
+  <url>
+    <loc>http://www.shibin.work/articles/3</loc>
+    <priority>0.74</priority>
+  </url>
+
+  <url>
+    <loc>http://www.shibin.work/articles/4</loc>
+    <priority>0.74</priority>
+  </url>
+
+  <url>
+    <loc>http://www.shibin.work/articles/5</loc>
+    <priority>0.74</priority>
+  </url>
+
+  <url>
+    <loc>http://www.shibin.work/articles/6</loc>
+    <priority>0.74</priority>
+  </url>
+
+  <url>
+    <loc>http://www.shibin.work/articles/7</loc>
+    <priority>0.74</priority>
+  </url>
+
+  <url>
+    <loc>http://www.shibin.work/articles/8</loc>
+    <priority>0.74</priority>
+  </url>
+
+  <url>
+    <loc>http://www.shibin.work/articles/9</loc>
+    <priority>0.74</priority>
+  </url>
+
+  <url>
+    <loc>http://www.shibin.work/recommends?recommend=1</loc>
+    <priority>0.62</priority>
+  </url>
+
+  <url>
+    <loc>http://www.shibin.work/recommends?recommend=2</loc>
+    <priority>0.62</priority>
+  </url>
+
+  <url>
+    <loc>http://www.shibin.work/recommends?recommend=3</loc>
+    <priority>0.62</priority>
+  </url>
+
+  <url>
+    <loc>http://www.shibin.work/recommends?recommend=4</loc>
+    <priority>0.62</priority>
+  </url>
+
+  <url>
+    <loc>http://www.shibin.work/informationns?category=1</loc>
+    <priority>0.58</priority>
+  </url>
+
+  <url>
+    <loc>http://www.shibin.work/users/password/new</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>http://www.shibin.work/articles/10</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>http://www.shibin.work/articles/11</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>http://www.shibin.work/articles/12</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>http://www.shibin.work/articles/13</loc>
+    <priority>0.57</priority>
+  </url>
+
+  <url>
+    <loc>http://www.shibin.work/asks/1</loc>
+    <priority>0.56</priority>
+  </url>
+
+  <url>
+    <loc>http://www.shibin.work/asks/2</loc>
+    <priority>0.56</priority>
+  </url>
+
+  <url>
+    <loc>http://www.shibin.work/asks/3</loc>
+    <priority>0.56</priority>
+  </url>
+
+  <url>
+    <loc>http://www.shibin.work/asks/4</loc>
+    <priority>0.56</priority>
+  </url>
+
+  <url>
+    <loc>http://www.shibin.work/asks/5</loc>
+    <priority>0.56</priority>
+  </url>
+
+  <url>
+    <loc>http://www.shibin.work/asks/6</loc>
+    <priority>0.56</priority>
+  </url>
+
+  <url>
+    <loc>http://www.shibin.work/asks/7</loc>
+    <priority>0.56</priority>
+  </url>
+
+  <url>
+    <loc>http://www.shibin.work/informationns/1</loc>
+    <priority>0.56</priority>
+  </url>
+
+</urlset>
