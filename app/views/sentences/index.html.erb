@@ -1,0 +1,4 @@
+<% @sentences.each do |sentence|%>
+<p><%=link_to( sentence.title,sentence_path(sentence) )%></p>
+
+<% end %>

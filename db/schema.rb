@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_12_03_065838) do
+ActiveRecord::Schema.define(version: 2022_12_21_114329) do
 
   create_table "answers", force: :cascade do |t|
     t.integer "ask_id"
@@ -56,19 +56,11 @@ ActiveRecord::Schema.define(version: 2022_12_03_065838) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "informationn_categories", force: :cascade do |t|
-    t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "informationns", force: :cascade do |t|
     t.string "title"
     t.text "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "informationn_category_id"
-    t.index [nil], name: "index_informationns_on_informationns_category_id"
   end
 
   create_table "migrations", force: :cascade do |t|
@@ -98,6 +90,12 @@ ActiveRecord::Schema.define(version: 2022_12_03_065838) do
     t.string "linkk"
     t.integer "recommend_category_id"
     t.index ["recommend_category_id"], name: "index_recommends_on_recommend_category_id"
+  end
+
+  create_table "sentences", force: :cascade do |t|
+    t.string "title"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   namespace :admin do
+
   resources :recommends
   end
   resources :recommends
@@ -45,12 +46,22 @@ resources :asks
 
   root"welcome#index"
 
+resources :sentences
+namespace :admin do
+  resources :sentences
+end
+
+
 namespace :admin do
   resources :articles
   resources :asks do
     resources :answers
   end
 end
+
+
+
+
 
 namespace :admin do
   resources :answers

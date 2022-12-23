@@ -1,4 +1,4 @@
-class CreateInformationns < ActiveRecord::Migration[5.0]
+class CreateInformationns < ActiveRecord::Migration[5.2]
   def change
     create_table :informationns do |t|
       t.string :title
