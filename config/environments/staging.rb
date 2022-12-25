@@ -59,3 +59,11 @@
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
+
+def TeachYourSelf(anything):
+  while not
+     create(somthing):
+     learn()
+     practice()
+  return TeachYourSelf(another) 
+TeachYourSelf(coding)
