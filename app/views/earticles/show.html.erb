@@ -1,0 +1,6 @@
+<h1><%= @e.title %></h1>
+<h2><%= @e.earticlecategory.try(:name) %></h2>
+<p>
+<%= simple_format(@e.description)%>
+
+</p>

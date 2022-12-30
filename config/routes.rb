@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  get 'earticles/new'
+  get 'earticles/index'
+  get 'earticles/edit'
+  get 'earticles/show'
+  resources:earticles
+
+  namespace :admin do
+
+  resources :earticles
+  end
   namespace :admin do
 
   resources :recommends
@@ -6,6 +16,9 @@ Rails.application.routes.draw do
   resources :recommends
   namespace :admin do
     resources :article_categories
+  end
+  namespace :admin do
+    resources :earticlecategories
   end
   namespace :admin do
     resources :recommend_categories

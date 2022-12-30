@@ -1,0 +1,12 @@
+<h3> 投文件 </h3>
+<div>
+<%= link_to("加一分类",new_admin_earticlecategory_path,:class => "btn btn-default")%>
+
+</div>
+<%= simple_form_for [:admin,@earticle] do |f| %>
+  <%= f.input :title %>
+  <%= f.input :description %>
+  <%= f.association :earticlecategory %>
+
+  <%= f.submit "送出" %>
+<% end %>

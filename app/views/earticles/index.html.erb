@@ -1,0 +1,26 @@
+<div class="category_sidebar tc border f12">
+  <a style = "color:green">类别：</a>
+<% @earticlecategory.each do |category| %>
+<%= link_to category.name, earticles_path(category: category.id) %>
+
+   <% end %>
+   <a class="backtop" href="javascript:;"><i class="fa fa-arrow-circle-up"></i></a>
+
+
+
+ </div>
+
+
+ <table class = "table table-bordered">
+
+ <% @e.each do |article|%>
+  <tr>
+    <td>
+ <%= link_to(article.title,earticle_path(article))%>
+  </td>
+  <td>
+<%=   %>
+</td>
+  </tr>
+ <% end %>
+    </table>
