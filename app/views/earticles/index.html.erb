@@ -1,5 +1,5 @@
 <div class="category_sidebar tc border f12">
-  <a style = "color:green">类别：</a>
+  <a style = "color:green">category：</a>
 <% @earticlecategory.each do |category| %>
 <%= link_to category.name, earticles_path(category: category.id) %>
 
