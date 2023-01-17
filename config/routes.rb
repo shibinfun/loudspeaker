@@ -7,14 +7,14 @@ Rails.application.routes.draw do
   end
 
 
-  resources:foreigns
+  resources:waimaos
 
   namespace :admin do
 
-  resources :foreigns
+  resources :waimaos
   end
   namespace :admin do
-    resources :foreign_categories
+    resources :waimao_categories
   end
 
   resources:malls

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_01_17_090709) do
+ActiveRecord::Schema.define(version: 2023_01_17_104949) do
 
   create_table "answers", force: :cascade do |t|
     t.integer "ask_id"
@@ -64,18 +64,7 @@ ActiveRecord::Schema.define(version: 2023_01_17_090709) do
     t.index ["earticlecategory_id"], name: "index_earticles_on_earticlecategory_id"
   end
 
-  create_table "foreign_categories", force: :cascade do |t|
-    t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
 
-  create_table "foreigns", force: :cascade do |t|
-    t.string "title"
-    t.text "description"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
 
   create_table "information", force: :cascade do |t|
     t.string "title"
@@ -121,6 +110,8 @@ ActiveRecord::Schema.define(version: 2023_01_17_090709) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+
 
   create_table "qqgroups", force: :cascade do |t|
     t.text "content"
