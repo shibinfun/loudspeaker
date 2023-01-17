@@ -1,0 +1,6 @@
+<h1><%= @video.title %></h1>
+
+<p>
+<%= simple_format(@video.description)%>
+<h5>分类：<%= @video.video_category.try(:name) %></h5>
+</p>

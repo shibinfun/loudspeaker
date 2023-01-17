@@ -1,8 +1,35 @@
 Rails.application.routes.draw do
-  get 'earticles/new'
-  get 'earticles/index'
-  get 'earticles/edit'
-  get 'earticles/show'
+  resources:videos
+
+  namespace :admin do
+
+  resources :videos
+  end
+
+
+  resources:foreigns
+
+  namespace :admin do
+
+  resources :foreigns
+  end
+  namespace :admin do
+    resources :foreign_categories
+  end
+
+  resources:malls
+
+  namespace :admin do
+
+  resources :malls
+  end
+  namespace :admin do
+    resources :mall_categories
+  end
+
+
+
+
   resources:earticles
 
   namespace :admin do

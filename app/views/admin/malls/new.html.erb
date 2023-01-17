@@ -1,0 +1,19 @@
+<h1>写一篇文章</h1>
+
+
+
+
+
+
+
+
+
+<%= simple_form_for [:admin,@mall] do |f|%>
+<%= f.input :title%>
+<%= f.input :description%>
+<%= f.association :mall_category %>
+<%= f.submit "Submit"%>
+
+
+
+<% end %>

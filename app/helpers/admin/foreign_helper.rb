@@ -1,0 +1,2 @@
+module Admin::ForeignHelper
+end

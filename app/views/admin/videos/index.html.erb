@@ -1,0 +1,26 @@
+
+<div>
+<%= link_to("写一篇",new_admin_video_path,:class => "btn btn-default")%>
+
+</div>
+
+<table class = "table table-bordered">
+<% @videos.each do |video| %>
+<tr>
+<td>
+<%= link_to(video.title,admin_video_path(video))%>
+</td>
+<td>
+<%= link_to("更改",edit_admin_video_path(video))%>
+<%= link_to("删除",admin_video_path(video),:method => :delete, :data => {:confirm => "你确定？"})%>
+
+</td>
+<td>
+<%= video.created_at %>
+</td>
+
+
+  </tr>
+<% end %>
+
+  </table>

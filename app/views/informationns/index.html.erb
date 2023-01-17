@@ -1,4 +1,16 @@
 
+<div class="category_sidebar tc border f12">
+  <a style = "color:green">category：</a>
+<% @a.each do |category| %>
+<%= link_to category.name, informationns_path(category: category.id) %>
+
+   <% end %>
+   <a class="backtop" href="javascript:;"><i class="fa fa-arrow-circle-up"></i></a>
+
+
+
+ </div>
+
 <table class = "table table-bordered">
 <% @informationns.each do |informationn| %>
 <tr>

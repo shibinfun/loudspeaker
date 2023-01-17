@@ -1,0 +1,29 @@
+<div>
+<%= link_to("加一分类",new_admin_mall_category_path,:class => "btn btn-default")%>
+
+</div>
+<div>
+<%= link_to("写一篇",new_admin_mall_path,:class => "btn btn-default")%>
+
+</div>
+
+<table class = "table table-bordered">
+<% @malls.each do |mall| %>
+<tr>
+<td>
+<%= link_to(mall.title,admin_mall_path(mall))%>
+</td>
+<td>
+<%= link_to("更改",edit_admin_mall_path(mall))%>
+<%= link_to("删除",admin_mall_path(mall),:method => :delete, :data => {:confirm => "你确定？"})%>
+
+</td>
+<td>
+<%= mall.created_at %>
+</td>
+
+
+  </tr>
+<% end %>
+
+  </table>

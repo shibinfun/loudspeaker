@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_12_30_120422) do
+ActiveRecord::Schema.define(version: 2023_01_17_090709) do
 
   create_table "answers", force: :cascade do |t|
     t.integer "ask_id"
@@ -64,9 +64,28 @@ ActiveRecord::Schema.define(version: 2022_12_30_120422) do
     t.index ["earticlecategory_id"], name: "index_earticles_on_earticlecategory_id"
   end
 
+  create_table "foreign_categories", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "foreigns", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "information", force: :cascade do |t|
     t.string "title"
     t.text "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "informationn_categories", force: :cascade do |t|
+    t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -76,6 +95,24 @@ ActiveRecord::Schema.define(version: 2022_12_30_120422) do
     t.text "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "informationn_category_id"
+    t.index ["informationn_category_id"], name: "index_informationns_on_informationn_category_id"
+  end
+
+  create_table "mall_categories", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "malls", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.string "link"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "mall_category_id"
+    t.index ["mall_category_id"], name: "index_malls_on_mall_category_id"
   end
 
   create_table "migrations", force: :cascade do |t|
@@ -124,6 +161,13 @@ ActiveRecord::Schema.define(version: 2022_12_30_120422) do
     t.boolean "is_admin", default: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  end
+
+  create_table "videos", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

@@ -1,0 +1,2 @@
+class ForeignCategory < ApplicationRecord
+end

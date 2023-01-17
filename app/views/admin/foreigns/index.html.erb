@@ -1,0 +1,29 @@
+<div>
+<%= link_to("加一分类",new_admin_foreign_category_path,:class => "btn btn-default")%>
+
+</div>
+<div>
+<%= link_to("写一篇",new_admin_foreign_path,:class => "btn btn-default")%>
+
+</div>
+
+<table class = "table table-bordered">
+<% @foreigns.each do |foreign| %>
+<tr>
+<td>
+<%= link_to(foreign.title,admin_foreign_path(foreign))%>
+</td>
+<td>
+<%= link_to("更改",edit_admin_foreign_path(foreign))%>
+<%= link_to("删除",admin_foreign_path(foreign),:method => :delete, :data => {:confirm => "你确定？"})%>
+
+</td>
+<td>
+<%= foreign.created_at %>
+</td>
+
+
+  </tr>
+<% end %>
+
+  </table>

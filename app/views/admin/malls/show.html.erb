@@ -1,0 +1,6 @@
+<h1><%= @mall.title %></h1>
+<h2><%= @mall.mall_category.try(:name) %></h2>
+<p>
+<%= simple_format(@mall.description)%>
+
+</p>

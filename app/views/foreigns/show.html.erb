@@ -1,0 +1,6 @@
+<h1><%= @foreign.title %></h1>
+
+<p>
+<%= simple_format(@foreign.description)%>
+<h5>分类：<%= @foreign.foreign_category.try(:name) %></h5>
+</p>

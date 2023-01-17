@@ -1,0 +1,6 @@
+<h1><%= @video.title %></h1>
+<h2><%= @video.video_category.try(:name) %></h2>
+<p>
+<%= simple_format(@video.description)%>
+
+</p>

@@ -1,0 +1,30 @@
+
+<div class="category_sidebar tc border f12">
+  <a style = "color:green">类别：</a>
+<% @a.each do |mall| %>
+<%= link_to mall.name, malls_path(mall: mall.id) %>
+
+   <% end %>
+   <a class="backtop" href="javascript:;"><i class="fa fa-arrow-circle-up"></i></a>
+
+
+
+ </div>
+
+
+<table class = "table table-bordered">
+<% @malls.each do |mall| %>
+<tr>
+<td>
+<a href="<%=mall.linkk%>"><%= mall.title%></a>
+</td>
+
+<td>
+<%=  mall.created_at %>
+</td>
+
+
+  </tr>
+<% end %>
+
+  </table>
