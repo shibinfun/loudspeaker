@@ -6,6 +6,21 @@ Rails.application.routes.draw do
   resources :videos
   end
 
+  resources:wordkeys
+
+  namespace :admin do
+
+  resources :wordkeys
+  end
+
+  resources:seos
+
+  namespace :admin do
+
+  resources :seos
+  end
+
+
 
   resources:waimaos
 
@@ -85,7 +100,7 @@ resources :asks
   #resources :answers
 
   root"welcome#index"
-
+resources :welcome
 resources :sentences
 namespace :admin do
   resources :sentences

@@ -1,0 +1,2 @@
+class Wordkey < ApplicationRecord
+end

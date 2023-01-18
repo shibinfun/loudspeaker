@@ -1,0 +1,26 @@
+
+<div>
+<%= link_to("写一篇",new_admin_wordkey_path,:class => "btn btn-default")%>
+
+</div>
+
+<table class = "table table-bordered">
+<% @wordkeys.each do |wordkey| %>
+<tr>
+<td>
+<%= link_to(wordkey.title,admin_wordkey_path(wordkey))%>
+</td>
+<td>
+<%= link_to("更改",edit_admin_wordkey_path(wordkey))%>
+<%= link_to("删除",admin_wordkey_path(wordkey),:method => :delete, :data => {:confirm => "你确定？"})%>
+
+</td>
+<td>
+<%= wordkey.created_at %>
+</td>
+
+
+  </tr>
+<% end %>
+
+  </table>

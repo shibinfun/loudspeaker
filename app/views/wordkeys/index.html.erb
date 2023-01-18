@@ -1,0 +1,28 @@
+<!--
+<div class="category_sidebar tc border f12">
+  <a style = "color:green">类别：</a>
+
+
+  <a class="backtop" href="javascript:;"><i class="fa fa-arrow-circle-up"></i></a>
+
+
+
+ </div>
+-->
+
+<table class = "table table-bordered">
+<% @wordkeys.each do |wordkey| %>
+<tr>
+<td>
+<a href="<%=wordkey.linkk%>"><%= wordkey.title%></a>
+</td>
+
+<td>
+<%=  wordkey.created_at %>
+</td>
+
+
+  </tr>
+<% end %>
+
+  </table>

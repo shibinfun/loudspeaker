@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  number_id: MyString
+  title: MyString
+  description: MyText
+  number1: MyString
+  bumber2: MyString
+
+two:
+  number_id: MyString
+  title: MyString
+  description: MyText
+  number1: MyString
+  bumber2: MyString

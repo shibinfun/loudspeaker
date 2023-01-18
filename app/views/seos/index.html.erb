@@ -1,0 +1,37 @@
+<!--
+<div class="category_sidebar tc border f12">
+  <a style = "color:green">类别：</a>
+
+
+  <a class="backtop" href="javascript:;"><i class="fa fa-arrow-circle-up"></i></a>
+
+
+
+ </div>
+-->
+<h2>seo案例</h2>
+<table class = "table table-bordered">
+<% @seos.each do |seo| %>
+<tr>
+<td>
+<a><%= seo.number_id%></a>
+</td>
+
+<td>
+  <%= link_to(seo.title,seo_path(seo))%>
+
+</td>
+
+<td>
+<%=  seo.description %>
+</td>
+<td>
+<%=  seo.number1 %>
+</td>
+<td>
+<%=  seo.bumber2 %>
+</td>
+  </tr>
+<% end %>
+
+  </table>

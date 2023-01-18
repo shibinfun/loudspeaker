@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_01_17_104949) do
+ActiveRecord::Schema.define(version: 2023_01_18_082549) do
 
   create_table "answers", force: :cascade do |t|
     t.integer "ask_id"
@@ -64,7 +64,11 @@ ActiveRecord::Schema.define(version: 2023_01_17_104949) do
     t.index ["earticlecategory_id"], name: "index_earticles_on_earticlecategory_id"
   end
 
-
+  create_table "foreign_categories", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "information", force: :cascade do |t|
     t.string "title"
@@ -111,7 +115,12 @@ ActiveRecord::Schema.define(version: 2023_01_17_104949) do
     t.datetime "updated_at", null: false
   end
 
-
+  create_table "nforeigns", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "qqgroups", force: :cascade do |t|
     t.text "content"
@@ -141,6 +150,16 @@ ActiveRecord::Schema.define(version: 2023_01_17_104949) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "seos", force: :cascade do |t|
+    t.string "number_id"
+    t.string "title"
+    t.text "description"
+    t.string "number1"
+    t.string "bumber2"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -157,6 +176,15 @@ ActiveRecord::Schema.define(version: 2023_01_17_104949) do
   create_table "videos", force: :cascade do |t|
     t.string "title"
     t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "wordkeys", force: :cascade do |t|
+    t.string "title"
+    t.string "description"
+    t.text "number1"
+    t.text "number2"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

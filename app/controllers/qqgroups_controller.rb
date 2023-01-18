@@ -1,6 +1,6 @@
 class QqgroupsController < ApplicationController
 
-  layout 'customer'
+
 
   def index
     @qqgroups = Qqgroup.all

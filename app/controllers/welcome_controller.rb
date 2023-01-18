@@ -5,5 +5,10 @@ class WelcomeController < ApplicationController
     @articles = Article.all
   end
 
+  def show
+      #flash[:notice] = ""
+
+
+  end
 
 end
