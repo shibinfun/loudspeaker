@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_01_18_082549) do
+ActiveRecord::Schema.define(version: 2023_01_18_103353) do
 
   create_table "answers", force: :cascade do |t|
     t.integer "ask_id"
@@ -158,6 +158,8 @@ ActiveRecord::Schema.define(version: 2023_01_18_082549) do
     t.string "bumber2"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "mobile1"
+    t.string "mobile2"
   end
 
   create_table "users", force: :cascade do |t|
