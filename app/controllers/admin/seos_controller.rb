@@ -45,7 +45,7 @@ class Admin::SeosController < ApplicationController
 
   private
   def seo_params
-  params.require(:seo).permit(:title, :description,:number_id,:number1,:number2)
+  params.require(:seo).permit(:title, :description,:number_id,:number1,:bumber2)
   end
 
 
