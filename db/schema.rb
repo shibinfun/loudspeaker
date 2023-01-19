@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_01_18_103353) do
+ActiveRecord::Schema.define(version: 2023_01_19_090922) do
 
   create_table "answers", force: :cascade do |t|
     t.integer "ask_id"
@@ -32,6 +32,13 @@ ActiveRecord::Schema.define(version: 2023_01_18_103353) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "article_category_id"
+    t.string "flowwater"
+    t.string "domainage"
+    t.string "rank1"
+    t.string "video"
+    t.string "wechat"
+    t.string "platforms"
+    t.text "another"
     t.index ["article_category_id"], name: "index_articles_on_article_category_id"
   end
 
