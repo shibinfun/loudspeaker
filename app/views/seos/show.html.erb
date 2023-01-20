@@ -1,22 +1,28 @@
-<h1><%= @seo.title %></h1>
+<h3><%= @seo.title %></h3>
 
-
+<h5>pc端最高5关键词：</h5>
 <p>
 <%= simple_format(@seo.number1)%>
 </p>
 <br>
+<h5>pc最低：</h5>
 <p>
 <%= simple_format(@seo.bumber2)%>
 </p>
+
 <br>
+
+<h5>移动端最高5关键词：</h5>
 <p>
 <%= simple_format(@seo.mobile1)%>
 </p>
 <br>
+<h5>移动最低：</h5>
 <p>
 <%= simple_format(@seo.mobile2)%>
 </p>
 <br>
+<h5>其他：</h5>
 <p>
 <%= simple_format(@seo.description)%>
 </p>
