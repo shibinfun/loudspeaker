@@ -17,4 +17,10 @@ layout 'customer'
     #@seos = seo.where(seo_category_id: params[:category])
 
     end
+
+
+    def new
+   @seos = Seo.new
+    end
+
 end
