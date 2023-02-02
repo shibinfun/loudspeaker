@@ -99,7 +99,7 @@ resources:qqgroups
 resources :asks
   #resources :answers
 
-  root"welcome#index"
+  root"articles#index"
 resources :welcome
 resources :sentences
 namespace :admin do
