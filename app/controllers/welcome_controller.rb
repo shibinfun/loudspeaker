@@ -1,4 +1,7 @@
 class WelcomeController < ApplicationController
+
+  layout 'customer'
+
   def index
       #flash[:notice] = ""
     @asks = Ask.all
