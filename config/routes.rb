@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
-  resources:videos
+  resources :videos
 
   namespace :admin do
 
   resources :videos
   end
 
-  resources:wordkeys
+  resources :wordkeys
 
   namespace :admin do
 
@@ -22,7 +22,7 @@ Rails.application.routes.draw do
 
 
 
-  resources:waimaos
+  resources :waimaos
 
   namespace :admin do
 

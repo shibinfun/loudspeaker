@@ -14,12 +14,11 @@
 <% @wordkeys.each do |wordkey| %>
 <tr>
 <td>
-<a href="<%=wordkey.linkk%>"><%= wordkey.title%></a>
+
+<a>  <%= link_to( wordkey.title, wordkey_path(wordkey))%></a>
 </td>
 
-<td>
-<%=  wordkey.created_at %>
-</td>
+
 
 
   </tr>
