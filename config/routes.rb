@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+
+  root 'welcome#index'
   resources :videos
 
   namespace :admin do
@@ -99,7 +101,7 @@ resources:qqgroups
 resources :asks
   #resources :answers
 
-  root"articles#index"
+
 resources :welcome
 resources :sentences
 namespace :admin do

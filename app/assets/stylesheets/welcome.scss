@@ -26,47 +26,25 @@
 
 	}
 }
-.navbar {
-	position: absolute !important;
-	top: 0;
-	left: 0;
-	z-index: 10;
-	width: 100%;
-	color: #fff;
-	a {
-		color: #fff;
-	}
-	.navbar-nav > li > a {
-		margin: 0 20px;
-	}
-	.nav > li > a:hover, .nav > li > a:focus {
-		background: none;
-		color: #fff;
-		text-decoration: underline;
-	}
-	.nav > li > .brand:hover, .nav > li > .brand:focus {
-		text-decoration: none;
-	}
-	.navbar-toggle .icon-bar {
-		background: #fff;
-	}
-}
+
+
+
 
 @media screen and (min-width: 768px) {
-	.navbar {
-		.navbar-nav {
+	.vipnavbar {
+		.vipnavbar-vipnav {
 			position: absolute;
 			top: 20px;
 			left: 50%;
 			margin-left: -341px;
 		}
-		.navbar-brand {
+		.vipnavbar-brand {
 			display: none;
 		}
-		.first-nav {
+		.first-vipnav {
 			margin-left: 440px;
 		}
-		.third-nav {
+		.third-vipnav {
 			margin-left: 200px;
 		}
 		.brand {
@@ -77,7 +55,7 @@
 }
 
 @media screen and (min-width: 768px) {
-	.navbar-fixed {
+	.vipnavbar-fixed {
 		position: fixed !important;
 		top: 0;
 		left: 0;
@@ -89,16 +67,16 @@
 	  a {
 	  	color: #555555;
 	  }
-	  .navbar-nav {
+	  .vipnavbar-vipnav {
 			top: 4px;
 	  }
 	  .brand {
 	  	color: #D32048;
 	  }
-	  .nav > li > .brand:hover, .nav > li > .brand:focus, {
+	  .vipnav > li > .brand:hover, .vipnav > li > .brand:focus, {
 	  	color: #D32048;
 	  }
-	  .nav > li > a:hover, .nav > li > a:focus {
+	  .vipnav > li > a:hover, .vipnav > li > a:focus {
 			color: #555555;
 		}
 	}
@@ -130,15 +108,15 @@
 	color: #fff;
 	height: 500px;
   overflow: hidden;
-  .jumbotron {
+  .vipjumbotron {
     padding-bottom: 110px;
     margin: 0 -15px;
     border-radius: 0;
     padding-top: 0;
   }
 }
-.jumbotron {
-  background-image: url(https://ww1.sinaimg.cn/large/006tNc79gy1fd7d1ric3qj31jk0rs14b.jpg);
+.vipjumbotron {
+  background-image: url();
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 110px;
@@ -168,7 +146,7 @@
   }
 }
 
-.jumbotron-title {
+.vipjumbotron-title {
 	color: #fff;
   text-align: center;
   padding: 125px 20px 0;
@@ -176,14 +154,14 @@
   text-align: center;
   line-height: 1.5;
 }
-.jumbotron-slogan {
+.vipjumbotron-slogan {
 	color: #fff;
   margin: 44px auto 0;
   font-size: 16px;
   line-height: 26px;
   text-align: center;
 }
-.jumbotron-lead {
+.vipjumbotron-lead {
   margin-top: 40px;
   margin-bottom: 230px;
   text-align: center;
