@@ -1,2 +1,0 @@
-class Seo < ApplicationRecord
-end

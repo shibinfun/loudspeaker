@@ -142,18 +142,6 @@ ActiveRecord::Schema.define(version: 2023_01_19_090922) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "seos", force: :cascade do |t|
-    t.string "number_id"
-    t.string "title"
-    t.text "description"
-    t.string "number1"
-    t.string "bumber2"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "mobile1"
-    t.string "mobile2"
-  end
-
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false

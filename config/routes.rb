@@ -15,12 +15,7 @@ Rails.application.routes.draw do
   resources :wordkeys
   end
 
-  resources:seos
 
-  namespace :admin do
-
-  resources :seos
-  end
 
 
 
@@ -112,7 +107,7 @@ end
 namespace :admin do
   resources :articles
 
-  
+
 end
 
 
