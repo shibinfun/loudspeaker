@@ -12,14 +12,6 @@
 
 ActiveRecord::Schema.define(version: 2023_01_19_090922) do
 
-  create_table "answers", force: :cascade do |t|
-    t.integer "ask_id"
-    t.integer "user_id"
-    t.text "content"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "article_categories", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
@@ -40,13 +32,6 @@ ActiveRecord::Schema.define(version: 2023_01_19_090922) do
     t.string "platforms"
     t.text "another"
     t.index ["article_category_id"], name: "index_articles_on_article_category_id"
-  end
-
-  create_table "asks", force: :cascade do |t|
-    t.text "asking"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer "user_id"
   end
 
   create_table "downloads", force: :cascade do |t|
