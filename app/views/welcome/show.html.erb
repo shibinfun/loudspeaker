@@ -1,49 +1,4 @@
 
-<!DOCTYPE html>
-<html>
-<head>
-  <title>青岛网站地图</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    #map {
-      height: 600px;
-    }
-  </style>
-</head>
-<body>
-  <h1>青岛地图</h1>
-  <div id="map"></div>
-
-  <script src="https://webapi.amap.com/maps?v=1.4.15&key=shibinsitemap"></script>
-  <script>
-    var map = new AMap.Map('map', {
-      zoom: 12,
-      center: [120.382988, 36.067234]
-    });
-
-    var marker1 = new AMap.Marker({
-      position: [120.374942, 36.062378],
-      title: '青岛图书馆',
-      map: map
-    });
-
-    var marker2 = new AMap.Marker({
-      position: [120.388187, 36.074787],
-      title: '青岛公安局',
-      map: map
-    });
-
-    marker1.on('click', function() {
-      window.location.href = 'https://www.qdlib.net/';
-    });
-
-    marker2.on('click', function() {
-      window.location.href = 'http://www.qingdaopolice.com/qdga/ztzl/qdjj/index.html';
-    });
-  </script>
-</body>
-</html>
 
 
 

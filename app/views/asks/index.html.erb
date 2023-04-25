@@ -1,8 +1,0 @@
-<%= link_to("我要问:",new_ask_path,:class=> 'btn btn-default')%>
-
-
-<h1></h1>
-<% @asks.each do |ask|%>
-<p><%=link_to( ask.asking,ask_path(ask) )%></p>
-
-<% end %>

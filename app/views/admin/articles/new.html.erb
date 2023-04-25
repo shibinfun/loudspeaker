@@ -1,27 +1,20 @@
 <h1>写一篇文章</h1>
 
 
-
-
-
-
-
-
-
-<%= simple_form_for [:admin,@article] do |f|%>
-<%= f.input :title%>
-<%= f.input :content%>
-<%= f.input :flowwater%>
-<%= f.input :domainage%>
-<%= f.input :rank1%>
-<%= f.input :video%>
-<%= f.input :wechat%>
-<%= f.input :platforms%>
-<%= f.input :another%>
-
-<%= f.association :article_category %>
-<%= f.submit "Submit"%>
-
-
-
+<%= form_with scope: :article, url: admin_articles_path, local: true do |form| %>
+  <p>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </p >
+  <p>
+    <%= form.label :content %><br>
+    <%= form.text_area :content, class: "markdown-editor" %>
+  </p >
+  <p>
+    <%= form.submit %>
+  </p >
 <% end %>
+
+<script>
+  var simplemde = new SimpleMDE({ element: document.querySelector(".markdown-editor") });
+</script>

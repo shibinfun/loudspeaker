@@ -111,9 +111,8 @@ end
 
 namespace :admin do
   resources :articles
-  resources :asks do
-    resources :answers
-  end
+
+  
 end
 
 
@@ -121,7 +120,7 @@ end
 
 
 namespace :admin do
-  resources :answers
+
   resources :downloads
 end
 namespace :admin do
